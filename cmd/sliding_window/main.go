@@ -7,7 +7,7 @@ import (
 
 func main() {
 	targetStr := "cat"
-	randomStr := "Lorem Ipsum iscat simply dummy text cat and dog"
+	randomStr := "Lorem Ipsum iscat simply dummcat caty text cat and dog"
 	occurs := algo.SingleSlidingWindow(randomStr, targetStr)
 	for pos := range occurs {
 		fmt.Println("Found match at", occurs[pos])
