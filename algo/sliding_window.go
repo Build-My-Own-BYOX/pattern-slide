@@ -1,7 +1,12 @@
 package algo
 
 func isMatchable(text string, pattern string) bool {
-	if len(text) < len(pattern) {
+	textLen := len(text)
+	patternLen := len(pattern)
+	if textLen <= 0 || patternLen <= 0 {
+		return false
+	}
+	if textLen < patternLen {
 		return false
 	}
 	return true
