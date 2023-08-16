@@ -12,7 +12,7 @@ func isMatchable(text string, pattern string) bool {
 	return true
 }
 
-func SingleSlidingWindow(text string, pattern string) (occurrences []int) {
+func SingleSlidingWindowSearch(text string, pattern string) (occurrences []int) {
 	if !isMatchable(text, pattern) {
 		return
 	}
